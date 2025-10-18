@@ -15,6 +15,13 @@ int main(){
         }
         printf("\n");
     }
+    
+    for (int i = 0; i <5; i++){
+        free(matrix[i]);
+    }
+
+    free(matrix);
+
     return 0;
 }
 
