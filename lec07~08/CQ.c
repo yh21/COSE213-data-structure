@@ -33,7 +33,7 @@ int main(){
     printf("key %2d  deleted from the queue. (front: %2d rear: %2d)\n", e.key, front, rear);
   }
 
-  for(i = 8; i < 16; i++) {
+  for(i = 8; i < 25; i++) {
     e.key = i;
     enqueue(e);
     printf("key %2d inserted into the queue. (front: %2d rear: %2d)\n", e.key, front, rear);
@@ -54,7 +54,7 @@ void enqueue(element item){
 }
 
 void queueFull(){
-    fprintf(stderr, "queue is full");
+    fprintf(stderr, "queue is full\n");
     exit(1);
 }
 
